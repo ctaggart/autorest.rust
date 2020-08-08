@@ -1,0 +1,9 @@
+[package]
+name = "autorest-rust"
+version = "0.1.0"
+authors = ["Cameron Taggart <cameron.taggart@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+# jsonrpc-core = "*"
+jsonrpc-core = { git = "https://github.com/paritytech/jsonrpc" }

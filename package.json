@@ -1,0 +1,33 @@
+{
+  "name": "autorust",
+  "version": "0.1.0",
+  "description": "The Rust extension for generators in AutoRest.",
+  "scripts": {
+    "start1": "node --experimental-wasi-unstable-preview1 --no-warnings main.js --debug",
+    "start": "wasmtime run target/wasm32-wasi/debug/autorust.wasm --mapdir /sandbox::. -- --debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ctaggart/autorust/"
+  },
+  "readme": "https://github.com/ctaggart/autorust/blob/autorestv3/README.md",
+  "keywords": [
+    "autorest",
+    "rust"
+  ],
+  "author": "Cameron Taggart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ctaggart/autorust/issues"
+  },
+  "homepage": "https://github.com/ctaggart/autorust/blob/master/README.md",
+  "dependencies": {},
+  "devDependencies": {
+    "@autorest/autorest": "^3.0.0",
+    "@microsoft.azure/autorest.testserver": "^2.10.53"
+  },
+  "files": [
+    "main.js",
+    "target/wasm32-wasi/debug/autorust.wasm"
+  ]
+}
